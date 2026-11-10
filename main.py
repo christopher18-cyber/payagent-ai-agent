@@ -11,7 +11,7 @@ class PayoutEvaluationRequest(BaseModel):
     amount: float
     vendor_email: str
 
-@app.post("/agent/evalaute")
+@app.post("/agent/evaluate")
 def evaluate_payout(payload: PayoutEvaluationRequest):
     try:
         initial_state = {
